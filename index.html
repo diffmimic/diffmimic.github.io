@@ -124,7 +124,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -134,7 +134,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -183,14 +183,9 @@
   <div class="container is-max-desktop">
     <!--add a video with customized timer to add current world time and customized button to play the video-->
     <div class="columns is-centered">
-      <figure>
-        <video id="video" src="./static/videos/3.mp4"></video>
-        <figcaption>
-          <label id="timer" for="progress" role="timer"></label>
-          <button id="play" aria-label="Play" role="button">►</button>
-          <progress id="progress" max="100" value="0">Progress</progress>
-          </figcaotion>
-    </figure>
+      <video id="comp-graph" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
     </div>
     <!-- <div class="hero-body">
       <head>
@@ -313,89 +308,73 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p>
+          Coming Soon
+        </p>
+        <!-- <div class="publication-video"> -->
+          <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
     <!--/ Paper video. -->
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <h2 class="title is-3">Learned Motions</h2>
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">BackFlip</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-      <!-- Matting. -->
-      <div class="column">
-        <h3 class="title is-3">Matting</h3>
+    <!-- fast and stable  -->
         <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+          <div class="column is-full-width">
+            <h2 class="title is-3">Fast and Stable</h2>
+            <!-- Interpolating. -->
+            <!-- <h3 class="title is-4">Interpolating states</h3> -->
+            <div class="content has-text-justified">
+              <p>
+                DiffMimic allows mimicking in the wild human videos involving dynmaic dance moves.
+              </p>
+              <video id="human" autoplay loop playsinline height="100%">
+                <source src="./static/videos/fast.mp4"
+                        type="video/mp4">
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-3">BackFlip</h3>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+     <!--/ fast and stable  -->
+     <!-- Various characters  -->
+         <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Applicable to Different Characters</h2>
+            <!-- Interpolating. -->
+            <!-- <h3 class="title is-4">Interpolating states</h3> -->
+            <div class="content has-text-justified">
+              <p>
+                DiffMimic also supports motion mimicking for various characters, including human with swords and shields, ants.
+              </p>
+              <video id="human" autoplay loop playsinline height="100%">
+                <source src="./static/videos/Different.mp4"
+                        type="video/mp4">
+            </div>
+          </div>
         </div>
-      </div>
-      <!--/ Visual Effects. -->
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-3">BackFlip</h3>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-    </div>
-    <!--/ Matting. -->
-
+     <!--/ Various characters  -->
+     <!-- Robustness  -->
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3">Robustness</h2>
+              <!-- Interpolating. -->
+              <!-- <h3 class="title is-4">Interpolating states</h3> -->
+              <div class="content has-text-justified">
+                <p>
+                  DiffMimic is robust to external perturbation. The box is randomly generated and ues to hit the humanoid character to simulate the external perturbation.
+                </p>
+                <video id="human" autoplay loop playsinline height="100%">
+                  <source src="./static/videos/cclockwise2.mov"
+                          type="video/mp4">
+              </div>
+            </div>
+          </div>
+       <!--/ Robustness -->
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Language Conditioned-Animation</h2>
-
         <!-- Interpolating. -->
         <!-- <h3 class="title is-4">Interpolating states</h3> -->
         <div class="content has-text-justified">
@@ -406,6 +385,75 @@
           class="interpolation-image"
           alt="Interpolate start reference image."/>
         </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <h2 class="title is-3">Gallery</h2>
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-3">BackFlip</h2>
+              <p>
+                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                would be impossible without nerfies since it would require going through a wall.
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/dollyzoom-stacked.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+          <!-- Matting. -->
+          <div class="column">
+            <h3 class="title is-3">Matting</h3>
+            <div class="columns is-centered">
+              <div class="column content">
+                <p>
+                  As a byproduct of our method, we can also solve the matting problem by ignoring
+                  samples that fall outside of a bounding box during rendering.
+                </p>
+                <video id="matting-video" controls playsinline height="100%">
+                  <source src="./static/videos/matting.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3">BackFlip</h3>
+              <p>
+                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                would be impossible without nerfies since it would require going through a wall.
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/dollyzoom-stacked.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-3">BackFlip</h3>
+              <p>
+                Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+                would be impossible without nerfies since it would require going through a wall.
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/dollyzoom-stacked.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+        </div>
+    <!--/ Animation. -->
         <!-- <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
             <img src="./static/images/interpolate_start.jpg"
@@ -428,12 +476,8 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div> -->
-        <br/>
+        <!-- <br/> -->
         <!--/ Interpolating. -->
-      </div>
-    </div>
-    <!--/ Animation. -->
-
 
     <!-- Concurrent Work. -->
     <!-- <div class="columns is-centered">
@@ -461,7 +505,6 @@
       </div>
     </div> -->
     <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
