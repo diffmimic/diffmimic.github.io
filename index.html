@@ -92,16 +92,16 @@
             <span class="author-block">
               <a href="https://majiker.github.io">Cunjun Yu</a><sup>*2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Siwei Chen</a><sup>2</sup>,
+              <a href="">Siwei Chen</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Xiao Ma</a><sup>3</sup>,
+              <a href="https://yusufma03.github.io/">Xiao Ma</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              Liang Pan<sup>2</sup>,
+              <a href="">Liang Pan</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Ziwei Liu</a><sup>1</sup>,
+              <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>1</sup>,
             </span>
           </div>
 
@@ -157,7 +157,7 @@
                 <a href="https://diffmimic-demo-main-g7h0i8.streamlit.app/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fa-solid fa-code"></i>
+                    <i class="far fa-images"></i>
                   </span>
                   <span>Live Demo</span>
                 </a>
@@ -183,7 +183,7 @@
   <div class="container is-max-desktop">
     <!--add a video with customized timer to add current world time and customized button to play the video-->
     <div class="columns is-centered">
-      <video id="comp-graph" autoplay muted loop playsinline height="100%">
+      <video id="comp-graph" autoplay muted loop playsinline width="75%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
     </div>
@@ -330,9 +330,11 @@
               <p>
                 DiffMimic enables the replication of human videos captured in natural, uncontrolled environments, including  dynamic dance movements. 
               </p>
-              <video id="human" autoplay loop playsinline height="100%">
+              <center>
+              <video id="fast" autoplay loop muted playsinline width="75%">
                 <source src="./static/videos/fast.mp4"
                         type="video/mp4">
+              </center>
             </div>
           </div>
         </div>
@@ -345,11 +347,14 @@
             <!-- <h3 class="title is-4">Interpolating states</h3> -->
             <div class="content has-text-justified">
               <p>
-                DiffMimic's capabilities extend beyond just mimicking simple humanoid motions, as it also supports motion replication for a diverse range of characters and scenarios. This includes humans wielding weapons such as swords and shields, as well as non-human creatures like ants
+                DiffMimic's capabilities extend beyond just mimicking simple humanoid motions, as it also supports motion replication for a diverse range of characters and scenarios. This includes humans wielding weapons such as swords and shields, as well as non-human model like ants.
               </p>
-              <video id="human" autoplay loop playsinline height="100%">
+              <center>
+              <video id="different" autoplay muted loop playsinline width="75%">
                 <source src="./static/videos/Different.mp4"
                         type="video/mp4">
+              </video>
+            </center>
             </div>
           </div>
         </div>
@@ -364,9 +369,11 @@
                 <p>
                   DiffMimic is robust against external perturbations, showcasing its adaptability and resilience in varying conditions. We generate random boxes that are used to strike humanoid characters, simulating the effects of unexpected external forces on their movements.
                 </p>
-                <video id="human" autoplay loop playsinline height="100%">
+                <center>                
+                  <video id="human" autoplay muted loop playsinline width="75%">
                   <source src="./static/videos/cclockwise2.mov"
-                          type="video/mp4">
+                  type="video/mov">
+                </center>
               </div>
             </div>
           </div>
@@ -381,9 +388,11 @@
           <p>
             DiffMimic's versatility extends to supporting downstream tasks such as language-conditioned animation, an application that combines natural language processing with motion synthesis. 
           </p>
+          <center>
           <img src="./static/images/teaser_cap.png"
           class="interpolation-image"
-          alt="Interpolate start reference image."/>
+          alt="Interpolate start reference image." width="75%"/>
+          </center>
         </div>
       </div>
     </div>
