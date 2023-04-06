@@ -78,11 +78,8 @@
         </div>
       </div> -->
     </div>
-
   </div>
 </nav>
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -175,7 +172,6 @@
                   <span>Data</span>
                   </a> -->
             </div>
-
           </div>
         </div>
       </div>
@@ -185,7 +181,18 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <!--add a video with customized timer to add current world time and customized button to play the video-->
+    <div class="columns is-centered">
+      <figure>
+        <video id="video" src="./static/videos/3.mp4"></video>
+        <figcaption>
+          <label id="timer" for="progress" role="timer"></label>
+          <button id="play" aria-label="Play" role="button">►</button>
+          <progress id="progress" max="100" value="0">Progress</progress>
+          </figcaotion>
+    </figure>
+    </div>
+    <!-- <div class="hero-body">
       <head>
         <title>brax visualizer</title>
         <style>
@@ -211,7 +218,7 @@
           const domElement = document.getElementById('brax-viewer');
           var viewer = new Viewer(domElement, system);
         </script>
-      </body>
+      </body> -->
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">DiffMimic</span> learns to <i> backflip</i> in 5 minutes.
       </h2>
@@ -316,7 +323,6 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -336,7 +342,6 @@
         </div>
       </div>
       <!--/ Visual Effects. -->
-
       <!-- Matting. -->
       <div class="column">
         <h3 class="title is-3">Matting</h3>
@@ -396,10 +401,12 @@
         <div class="content has-text-justified">
           <p>
             DiffMimic also support downstream tasks like language conditioned animation.
-            frame.
           </p>
+          <img src="./static/images/teaser_cap.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
+        <!-- <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
             <img src="./static/images/interpolate_start.jpg"
                  class="interpolation-image"
@@ -420,10 +427,9 @@
                  alt="Interpolation end reference image."/>
             <p class="is-bold">End Frame</p>
           </div>
-        </div>
+        </div> -->
         <br/>
         <!--/ Interpolating. -->
-
       </div>
     </div>
     <!--/ Animation. -->
